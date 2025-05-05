@@ -279,9 +279,6 @@ $avgParticipantsPerActivity = $conn->query("SELECT AVG(participant_count) FROM (
         <a href="../ADMINS/création_rôles/création_rôles.php" class="quick-action-btn">
             <i class="fas fa-cog"></i> Création des Roles
         </a>
-        <a href="../ADMINS/gestion_participants/gestion_participants.php" class="quick-action-btn">
-        <i class="fas fa-users"></i> Gestion des Participants
-        </a>
         <a href="../ADMINS/gestion_responsable/gestion_responsable.php" class="quick-action-btn">
         <i class="fas fa-users"></i> Gestion des Responsables
         </a>

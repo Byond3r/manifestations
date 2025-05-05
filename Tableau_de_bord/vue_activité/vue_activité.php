@@ -352,6 +352,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id_C'], $_SESSION['id
             if ($user) {
                 // Affichage du bouton retour et des informations de l'utilisateur
                 echo "<a href='../vue_activité/Page_Accueil_U.php' class='btn btn-retour'>Retour</a>";
+                //bouton de deconnexion
+                echo "<a href='../../ADMINS/connexion/déconnexion.php' class='btn btn-danger' style='background-color: #ff4d4d; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px;'>Déconnexion</a>";
+                // Affichage des informations de l'utilisateur
                 echo "<h3>Bienvenue, " . htmlspecialchars($user['Prenom_C']) . " " . htmlspecialchars($user['Nom_C']) . " !</h3>";
                 if (!empty($user['Role_C'])) {
                     echo "<p class='role-user'>Rôle : " . htmlspecialchars($user['Role_C']) . "</p>";
